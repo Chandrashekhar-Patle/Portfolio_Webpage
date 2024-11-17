@@ -1,0 +1,488 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+
+.navbar{
+  position: absolute;
+  background-color: rgb(58, 51, 238);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 23;
+  box-shadow: inset 3px 0px 10px white,
+    0px 2px 30px black;
+}
+
+.navbar h1{
+  color : white;
+  margin-left: 20px;
+}
+
+.navbar .Links{
+  position: relative;
+  left: -250px;
+}
+
+.navbar .Links a{
+  text-decoration: none;
+  color : rgb(255, 255, 255);
+  padding: 0px 20px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.Home{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(34, 36, 36);
+  /* background-image: conic-gradient(red, yellow, green, blue, black 60%); */
+  display: flex;
+}
+
+.home-Data{
+  position: absolute;
+  width: 40%;
+  text-align: right;
+  padding: 30px;
+  top: 130px;
+  left: 100px;
+}
+
+.Home h4{
+  color: white;
+  font-style: italic;
+  font-size: 1.2em;
+
+}
+
+.Home h3{
+  color: #fffefc;
+  font-size: 1.6rem;
+  font-style: oblique;
+  display: inline;
+  margin-right: 10px;
+  
+}
+
+.Home h1{
+  color: #fa9601;
+  font-size: 3rem;
+  display: inline;
+  text-shadow: 8px 8px 10px black;
+}
+
+.Home .home-Data p{
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.profile-Picture{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  left: 680px;
+  border-radius: 50%;
+  top: 150px;
+  border: 5px solid white;
+  box-shadow: inset 10px 10px 20px blue,
+  10px 10px 20px blue,
+  inset -10px -10px 20px blue,
+  -10px -10px 20px blue;
+}
+
+
+.profile-Picture img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.Home button{
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  background: none;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: inset 0px 2px 10px white;
+  color: white;
+  font-size: 1.2em;
+}
+
+.Home button a{
+  color: white;
+  text-decoration: none;
+}
+
+.Home button:hover{
+  background: blue;
+  border: 1px solid black;
+}
+
+.Home button:last-child{
+  background: blue;
+  border: 1px solid black;
+}
+
+.Home button:last-child:hover{
+  background: rgb(0, 0, 0);
+  border: 1px solid blue;
+}
+
+/* =================================================================== */
+/* -------------------------- ABOUT ME ------------------------------- */
+/* =================================================================== */
+
+.About_me{
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  top: 50px;
+  background-color: rgb(34, 36, 36);
+}
+
+.About_me .heading{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.About_me .About_Detalis{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 150px;
+}
+
+.About_Detalis .profile_Details img{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.About_Detalis .profile_Details label{
+  color: rgb(223, 135, 20);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.About_Detalis .profile_Details h3, h4, p{
+  color: white;
+}
+
+
+.About_me .About_Detalis .profile-info{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  color: whitesmoke;
+}
+
+.About_Detalis .profile-info h3{
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+
+.About_Detalis .profile-info .Education{
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #667480;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.About_Detalis .profile-info .Education label{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(255, 145, 0);
+}
+
+/* =================================================================== */
+/* -------------------------- PROJECT FILE --------------------------- */
+/* =================================================================== */
+
+.Project-file{
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  top: 50px;
+  background-color: rgb(34, 36, 36);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Project-file h1{
+  position: relative;
+  width: 100%;
+  top: 40px;
+  color: aqua;
+  text-align: center;
+}
+
+.Project-Section{
+  position: relative;
+  width: 40%;
+  /* height: 60%; */
+  /* border: 2px solid rgb(211, 211, 211); */
+  border-radius: 10px;
+  /* padding: 10px; */
+  margin: 70px 30px 0px 30px;
+  box-shadow: 10px 10px 20px black,
+  -10px -10px 20px black;
+}
+
+.Project-Section img{
+  width: 100%;
+}
+
+.Project-Section .Title-Name{
+  color: #fa9601;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.Project-Section .description{
+  text-align: justify;
+  padding-bottom: 20px;
+  padding: 10px;
+}
+
+.Project-Section label{
+  color: aqua;
+  padding: 10px;
+}
+
+.Project-Section .technos{
+  color: white;
+  padding: 0px 0px 10px 10px;
+}
+
+.Project-Section button{
+  padding: 10px;
+  background:springgreen;
+  outline: none;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Project-Section button:hover{
+  background:rgb(13, 201, 107);
+}
+
+.Project-Section button a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.Project-Section button a:hover{
+  color: #ffffff;
+}
+
+
+/* =================================================================== */
+/* -------------------------- CONTACT FILE --------------------------- */
+/* =================================================================== */
+
+.Contact-page{
+  position: absolute;
+  width: 100%;
+  background-color: rgb(34, 36, 36);
+
+}
+
+.Contact-page h1{
+  position: relative;
+  width: 100%;
+  top: 60px;
+  color: aqua;
+  text-align: center;
+}
+
+.Contact-page .contact-container{
+  position: relative;
+  width: 80%;
+  left: 150px;
+  margin-top: 100px;
+  display: flex;
+  border: 2px solid rgb(83, 83, 83);
+  box-shadow: 10px 10px 30px black;
+  margin-bottom: 50px;
+}
+
+.Contact-page .contact-container .Social-links{
+  position: relative;
+  width: 50%;
+  /* background-color: #747bff; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  flex-wrap: wrap;
+}
+
+.Contact-page .contact-container .Social-links .address{
+  text-align: center;
+}
+
+.Contact-page .contact-container .Social-links img{
+  background-color: #fa9601;
+  position: relative;
+  width: 80px;
+  height: 60px;
+  
+}
+
+.Contact-page .contact-container .middle-line{
+  width: 5px;
+  border: 3px solid white;
+  box-shadow: inset 10px 10px 20px blue,
+  10px 10px 20px blue,
+  inset -10px -10px 20px blue,
+  -10px -10px 20px blue;
+
+}
+
+.Contact-page .contact-container .Social-links h3{
+  color: #ff0000;
+}
+
+.Contact-page .contact-container .Social-links a{
+  color: #ffffff;
+}
+
+.Contact-page .contact-container .Social-links a:hover{
+  color: #8400ff;
+}
+
+.Contact-page .contact-container form{
+  position: relative;
+  width:55%;
+  padding: 20px;
+  /* border: 2px solid #d3d3d3; */
+  background-color: transparent;
+}
+
+.Contact-page .contact-container form .input-Data{
+  /* padding: 10px; */
+  margin: 20px 10px;
+}
+
+.Contact-page .contact-container form label{
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fa9601;
+}
+
+
+.contact-container form .input-Data input, textarea{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom:2px solid #f9f9f9;
+  color: #ffffff;
+  margin: 0px 0px;
+  font-size: 1rem;
+}
+
+/* Work Pending :- .contact-container form .input-Data input[type = "placeholder"], textarea[type = "placeholder"]{
+  color: #fffefc;
+} */
+
+
+.contact-container form .input-Data button{
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: crimson;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact-container form .input-Data button:hover{
+  background: #ff0000;
+}
+
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
